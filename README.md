@@ -56,7 +56,7 @@ MessageConsumer ---------- QueueReceiver ---------- TopicSubscriber
 (5)、使用消息接收者MessageReceiver接受消息，需要用setMessageListener将MessageListener接口绑定到MessageReceiver消息接收者必须实现了MessageListener接口，需要定义onMessage事件方法。
 
 #运行
-1.启动activemq服务器
-2.登录服务器:http://127.0.0.1:8161/admin, 默认用户名、密码:admin
-3.运行消息生产者(查看Active服务器)
-4.运行消息消费者（查看Active服务器）
+1.启动activemq服务器<br>
+2.登录服务器:http://127.0.0.1:8161/admin, 默认用户名、密码:admin<br>
+3.运行消息生产者(查看Active服务器)<br>
+4.运行消息消费者（查看Active服务器）<br>
