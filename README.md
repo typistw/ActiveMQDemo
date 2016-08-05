@@ -1,6 +1,6 @@
 #开发环境
 
-我使用的是ActiveMQ 5.11.2 Release的Windows版，官网最新版是ActiveMQ 5.13.4 Release.[下载地址](http://activemq.apache.org/download.html)
+我使用的是ActiveMQ 5.11.2 Release的Windows版，官网最新版是ActiveMQ 5.13.4 Release。[下载地址](http://activemq.apache.org/download.html)
 
 需要注意的是，开发时候，要将apache-activemq-5.11.2-bin.zip解压缩后里面的activemq-all-5.11.2.jar包加入到classpath下面，这个包包含了所有jms接口api的实现。
 
@@ -27,10 +27,11 @@ MessageConsumer ---------- QueueReceiver ---------- TopicSubscriber
 ###(2)、发布/订阅 方式（publish/subscriber Messaging）
 
 发布/订阅方式用于多接收客户端的方式.作为发布订阅的方式，可能存在多个接收客户端，并且接收端客户端与发送客户端存在时间上的依赖。一个接收端只能接收他创建以后发送客户端发送的信息。作为subscriber ,在接收消息时有两种方法，destination的receive方法，和实现message listener 接口的onMessage 方法。
-ActiviteMQ接收和发送消息基本流程
 
+####ActiviteMQ接收和发送消息基本流程
+![image](https://github.com/ActiveMQDemo/resources/flow.png)
 
-发送消息的基本步骤：
+####发送消息的基本步骤：
 
 (1)、创建连接使用的工厂类JMS ConnectionFactory
 
