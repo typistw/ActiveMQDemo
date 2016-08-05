@@ -29,7 +29,7 @@ MessageConsumer ---------- QueueReceiver ---------- TopicSubscriber
 发布/订阅方式用于多接收客户端的方式.作为发布订阅的方式，可能存在多个接收客户端，并且接收端客户端与发送客户端存在时间上的依赖。一个接收端只能接收他创建以后发送客户端发送的信息。作为subscriber ,在接收消息时有两种方法，destination的receive方法，和实现message listener 接口的onMessage 方法。
 
 ####ActiviteMQ接收和发送消息基本流程
-![](https://github.com/typistw/ActiveMQDemo/tree/master/ActiveMQDemo/resources/flow.png)  
+![](https://github.com/typistw/ActiveMQDemo/blob/master/ActiveMQDemo/resources/flow.png)  
 
 ####发送消息的基本步骤：
 
